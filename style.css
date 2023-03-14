@@ -1,4 +1,4 @@
-html{
+html {
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
@@ -7,39 +7,44 @@ html{
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color:#1f1f21;
+    background-color: #1f1f21;
 
 }
-body{
+
+body {
     margin: 0;
 }
-section{
+
+section {
     height: 600px;
 }
 
 
-#paiNavLista{
+#paiNavLista {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 0px;
     justify-content: center;
-    background-color:rgba(181,7,20,0.6);
+    background-color: rgba(181, 7, 20, 0.6);
     width: 100%;
     height: 60px;
 }
-.navLista{
+
+.navLista {
     margin: 0px 10px;
     padding-left: 0px;
     margin-top: 0;
 }
-.navLista:hover{
+
+.navLista:hover {
     scale: 1.1;
-    background-color:rgba(177, 43, 52, 0.6);
+    background-color: rgba(177, 43, 52, 0.6);
     border-radius: 10px;
     padding: 15px 18px;
 }
-.navLista > a{
+
+.navLista>a {
     color: #fff;
     text-decoration: none;
 }
@@ -48,10 +53,11 @@ section{
 #sec1 {
     margin: 0;
 }
-.imagemMeio1{
-    -webkit-box-shadow: 17px 21px 87px 40px rgba(0,0,0,0.51);
-    -moz-box-shadow: 17px 21px 87px 40px rgba(0,0,0,0.51);
-    box-shadow: 17px 21px 87px 40px rgba(0,0,0,0.51);
+
+.imagemMeio1 {
+    -webkit-box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
+    box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
     background-position: center;
     background-image: url(img/imgMeio/chorizo-entrecote-short-rib-carnes-nobres-para-preparar.jpg);
     background-size: 100%;
@@ -59,31 +65,37 @@ section{
     background-position-y: -322px;
     height: 300px;
 }
-.imagemMeio1 > h1 {
-    padding:80px  20px 10px; 
+
+.imagemMeio1>h1 {
+    padding: 80px 20px 10px;
     color: #fff;
-    font-size:40px;
+    font-size: 40px;
     font-weight: bolder;
     text-align: center;
     margin: 0;
 }
-.imagemMeio1 > p {
+
+.imagemMeio1>p {
     margin: 0;
     padding: 0;
     color: #fff;
     font-size: 10px;
 }
-.encaixaImagem{
-    
+
+.encaixaImagem {
+
     width: 100%;
     height: 200px;
 }
+
 /* ------------------------------------ */
-#sec2{
+#sec2 {
+    justify-content: center;
     margin-bottom: 200px;
     padding: 20px;
 }
-#sec2 > h2{
+
+#sec2>h2 {
     line-height: 90px;
     padding-left: 50px;
     font-size: 20px;
@@ -91,75 +103,95 @@ section{
     text-align: start;
     margin-left: 60px;
 }
-#sec2 > p{
-     text-align: start;
-     margin-left: 60px;
-     margin-bottom: 40px;
- }
- #flex{
+
+#sec2>p {
+    text-align: start;
+    margin-left: 60px;
+    margin-bottom: 40px;
+}
+
+#flex {
     margin: 10px 60px;
     justify-content: space-between;
     display: flex;
     padding: 0px 20px;
- }
- #sec2 > div:nth-child(1) > div:nth-child(2) > p{
+}
+
+#sec2>div:nth-child(1)>div:nth-child(2)>p {
     font-size: small;
     width: 300px;
     padding: 10px 20px;
- }
- #sec3{
+}
+
+#sec3 {
     height: 500px;
- }
-
-.carrossel{
-    justify-content: center;
-    display: flex;
 }
-.celula{
-    -webkit-box-shadow: 33px 33px 35px -8px rgba(0,0,0,0.53);
-    -moz-box-shadow: 33px 33px 35px -8px rgba(0,0,0,0.53);
-    box-shadow: 33px 33px 35px -8px rgba(0,0,0,0.53);
+
+.carrossel {
+    opacity: 90%;
     border-radius: 20px;
-    display: block;
-    height: 379px;
-    width: 273px;
-    margin-right: 25px;
-
     overflow: hidden;
+    height: 437px;
+    width: 1200px;
+
 }
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+
+}
+
+.celula {
+    
+    margin: 0px 20px;
+    -webkit-box-shadow: 33px 33px 35px -8px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 33px 33px 35px -8px rgba(0, 0, 0, 0.53);
+    box-shadow: 33px 33px 35px -8px rgba(0, 0, 0, 0.53);
+    border-radius: 20px;
+    /* display: block; */
+    height: 382px;
+    width: 800px;
+    /* margin-right: 25px; */
+
+    /* overflow: hidden;
+    object-fit: cover; */
+}
+
 .celula:hover {
     scale: 1.1;
     transition: 250ms;
 }
-.container{
-    display: flex;
-    transition: transform 0.5s ease-in-out;
 
-}
-.cel1{
+
+
+.cel1 {
     height: 65%;
     width: 273px;
 }
+
 .imgCircular {
     border-radius: 10px 10px 0px 0px;
 }
-.cel2{
+
+.cel2 {
     background-color: #fff;
     /* border: 1px solid greenyellow; */
     width: 100%;
     height: 35%;
-    border-radius: 0px  0px  10px 10px ;
+    border-radius: 0px 0px 10px 10px;
 }
-.divDaImagem{
+
+.divDaImagem {
     /* border: 1px solid greenyellow; */
     height: 330px;
     width: 249px;
 }
 
 .imgQuemSomos {
-    -webkit-box-shadow: 17px 21px 87px 40px rgba(0,0,0,0.51);
--moz-box-shadow: 17px 21px 87px 40px rgba(0,0,0,0.51);
-box-shadow: 17px 21px 87px 40px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
+    box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
     background-image: url(img/imgMeio/carne_bloomberg.png);
     background-position: center;
     background-size: 100%;
@@ -171,70 +203,79 @@ box-shadow: 17px 21px 87px 40px rgba(0,0,0,0.51);
 
 
 }
-.centralizar{
+
+.centralizar {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
-.centralizar > p{
+
+.centralizar>p {
     font-size: 15px;
     padding: 10px 283px;
 }
-.localizacao > h2{
+
+.localizacao>h2 {
     margin-bottom: 40px;
     font-size: 40px;
 }
 
 
-.flexivel{
-    -webkit-box-shadow: 17px 21px 87px 40px rgba(0,0,0,0.51);
--moz-box-shadow: 17px 21px 87px 40px rgba(0,0,0,0.51);
-box-shadow: 17px 21px 87px 40px rgba(0,0,0,0.51);
+.flexivel {
+    -webkit-box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
+    -moz-box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
+    box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
     display: flex;
-} 
+}
 
-.contatoLateral{
+.contatoLateral {
     color: #1f1f21;
     height: 400px;
     width: 50%;
-    background-color: #b3796f
-    ;
-}.contato{
+    background-color: #b3796f;
+}
+
+.contato {
     text-align: start;
     padding-left: 60px;
 }
-.contato > h3{
+
+.contato>h3 {
     font-size: 30px;
 }
-body > section:nth-child(7) > div > div > div.contatoLateral > div > div > img{
 
-width: 20px;
-height: 20px;
-margin-right: 5px;
-margin-top: 15px;
+body>section:nth-child(7)>div>div>div.contatoLateral>div>div>img {
+
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    margin-top: 15px;
 
 }
 
-body > section:nth-child(7) > div > div > div.contatoLateral > div > div{
-display: flex;
-    
+body>section:nth-child(7)>div>div>div.contatoLateral>div>div {
+    display: flex;
+
 }
 
-body > section:nth-child(7) > div > div > div.contatoLateral > div > p:nth-child(8){
-padding-bottom: 1px;
+body>section:nth-child(7)>div>div>div.contatoLateral>div>p:nth-child(8) {
+    padding-bottom: 1px;
 }
-#sec5{
+
+#sec5 {
     height: 525px;
     margin-bottom: 0;
 
 }
-#sec5 > div > div > div.contatoLateral > div > div:hover{
+
+#sec5>div>div>div.contatoLateral>div>div:hover {
     cursor: pointer;
     scale: 1.7;
     margin-left: 150px;
 }
-#absolute{
-    
+
+#absolute {
+
     right: 30px;
     bottom: -2500px;
     position: fixed;
@@ -243,31 +284,34 @@ padding-bottom: 1px;
     background-color: rgb(247, 171, 25);
     border-radius: 8px;
 }
-#absolute:hover{
+
+#absolute:hover {
     scale: 1.1;
 
 }
-.divBotao{
+
+.divBotao {
     display: flex;
 }
 
-footer{
+footer {
     z-index: -1;
     margin: 0;
 
     height: 300px;
-    background-color:rgba(181,7,20,0.6);
+    background-color: rgba(181, 7, 20, 0.6);
 }
 
 @media only screen and (min-width: 1400px) {
 
 
-    .imagemMeio1{
+    .imagemMeio1 {
 
         background-position-y: -600px;
-    
+
     }
-    .centralizar > p{
+
+    .centralizar>p {
         font-size: 15px;
         padding: 10px 500px;
     }
