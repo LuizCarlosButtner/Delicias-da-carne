@@ -13,4 +13,4 @@ let carrossel =()=>{
     celula.style.transform - `translateX(${-idx * 275}px)`
 }
 
-setInterval(carrossel, 1800);
+// setInterval(carrossel, 1800);
