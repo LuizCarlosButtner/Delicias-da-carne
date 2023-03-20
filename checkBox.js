@@ -31,7 +31,7 @@ let turnOnOff=(a)=>{
             interruptor--
         }
     }
-    switch(teste){
+    switch(interruptor){
         case -1: 
             marcarTodos.classList.remove("checked")
             marcarTodos.classList.add("umElementoClicado")
