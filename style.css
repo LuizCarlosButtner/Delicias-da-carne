@@ -222,6 +222,9 @@ section {
     font-size: 15px;
     padding: 10px 283px;
 }
+#sec5{
+    height: 524px;
+}
 
 .localizacao>h2 {
     margin-bottom: 40px;
@@ -236,24 +239,22 @@ section {
     display: flex;
 }
 
-.contato>div img {
-    width: 10px;
-}
 
-.contatoLateral {
-    color: #1f1f21;
-    height: 400px;
-    width: 50%;
-    background-color: #b3796f;
-}
 
-.contato {
-    text-align: start;
-    padding-left: 60px;
-}
 
 .contato>h3 {
-    font-size: 30px;
+    font-size: 40px;
+}
+.contatoLateral {
+    -webkit-box-shadow: inset 14px -58px 110px 40px rgba(51,0,0,0.46);
+    -moz-box-shadow: inset 14px -58px 110px 40px rgba(51,0,0,0.46);
+    box-shadow: inset 14px -58px 110px 40px rgba(51,0,0,0.46);
+
+    width: 50%;
+    background-color: #c80f0fd0;
+}
+.contato{
+    padding: 0px 60px;
 }
 
 body>section:nth-child(7)>div>div>div.contatoLateral>div>div>img {
@@ -264,31 +265,17 @@ body>section:nth-child(7)>div>div>div.contatoLateral>div>div>img {
     margin-top: 15px;
 
 }
-
-body>section:nth-child(7)>div>div>div.contatoLateral>div>div {
-    display: flex;
-
-}
-
-body>section:nth-child(7)>div>div>div.contatoLateral>div>p:nth-child(8) {
-    padding-bottom: 1px;
-}
-
-#sec5 {
-    margin: 194px 0px;
-
-}
-
-#sec5>div>div>div.contatoLateral>div>div:hover {
-    cursor: pointer;
-    scale: 1.7;
-    margin-left: 150px;
-}
-
-.divBotao {
-    
+.funcionamentoEtelefone{
+    text-align: start;
+    justify-content: space-between;
     display: flex;
 }
+.telefones{
+    text-align: start;
+
+}
+
+
 
 /* footer */
 
@@ -348,9 +335,8 @@ a{
 
 #absolute {
     display: none;
-    right: 20px;
-    bottom: 10px;
-    position: fixed;
+    bottom: 200px;
+    position: sticky;
     z-index: 1;
     color: #fff;
     background-color: rgb(247, 171, 25);
