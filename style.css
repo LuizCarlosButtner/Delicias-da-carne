@@ -185,30 +185,35 @@ section {
     width: 249px;
 }
 
-.imgQuemSomos {
+/* .imgQuemSomos {
     -webkit-box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
     -moz-box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
     box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
-    background-image: url(img/imgMeio/carne_bloomberg.png);
+    background-image: url(img/imgMeio/adesivo-de-parede-papel-parede-madeira-rustica-escura-madeira-linda.jpg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: -322px;
-    height: 300px;
+    height: 500px;
     display: table;
     width: 100%;
 
 
-}
+} */
 
 .centralizar {
+    height: 500px;
+    -webkit-box-shadow: inset 40px -34px 118px 126px rgba(51,0,0,0.46);
+    -moz-box-shadow: inset 40px -34px 118px 126px rgba(51,0,0,0.46);
+    box-shadow: inset 40px -34px 118px 126px rgba(51,0,0,0.46);
+    background-color: #c80f0fd0;
     display: table-cell;
     vertical-align: middle;
     text-align: center;
 }
 
-.centralizar>p {
-    font-size: 15px;
+.centralizar > p {
+    font-size: 20px;
     padding: 10px 283px;
 }
 #sec5{
