@@ -14,14 +14,17 @@ html {
 }
 
 body {
+
     margin: 0;
 }
 
 
+
 section {
     /* border: 1px solid red; */
+    padding: 0px 80px;
     box-sizing: border-box;
-    height: 600px;
+    margin-bottom: 200px;
 }
 
 
@@ -75,8 +78,11 @@ section {
 }
 
 /* --------------------primeira sec--------------------------------- */
-#sec1 {height: 400px;
-    margin: 0;
+#sec1 {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    height: 400px;
 }
 
 .imagemMeio1 {
@@ -99,33 +105,52 @@ section {
     
 }
 
-/* ------------------------------------ */
-#sec2 {
-    padding: 20px;
-    margin: 139px 0px;
+/* -----------------sec2------------------- */
+#sec2{
+
+}
+#sec2, #sec4 {
+    /* border: 1px solid red; */
+    /* align-items: center; */
+    box-sizing: border-box;
+
+
+}
+#flex{
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: center;
+}
+#flex > div{
+    /* border: 1px solid red; */
+    width: 900px;
+
+}
+#flex > div > div{
+    margin-left: 21%;
+    /* border: 1px solid red; */
+    width: 500px;
+
+}
+#flex > p{
+    text-align: start;
 }
 
 #sec2>h2 {
-    line-height: 90px;
-    padding-left: 50px;
     font-size: 20px;
-    margin-top: 00px;
-    text-align: start;
-    margin-left: 60px;
 }
 
 #sec2>p {
+    width: 100px;
+}
+.tituloDoCarroussel{
+    width: 270px;
+    /* border: 1px solid red; */
     text-align: start;
-    margin-left: 60px;
-    margin-bottom: 40px;
 }
 
-#flex {
-    margin: 10px 60px;
-    justify-content: space-between;
-    display: flex;
-    padding: 0px 20px;
-}
+
 /* ---------------verificar o que essa chamada acessa--------------------- */
 #sec2>div:nth-child(1)>div:nth-child(2)>p {
     font-size: small;
@@ -185,27 +210,14 @@ section {
     width: 249px;
 }
 
-/* .imgQuemSomos {
-    -webkit-box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
-    -moz-box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
-    box-shadow: 17px 21px 87px 40px rgba(0, 0, 0, 0.51);
-    background-image: url(img/imgMeio/adesivo-de-parede-papel-parede-madeira-rustica-escura-madeira-linda.jpg);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-y: -322px;
-    height: 500px;
-    display: table;
-    width: 100%;
 
-
-} */
 
 .centralizar {
     height: 500px;
-    -webkit-box-shadow: inset 40px -34px 118px 126px rgba(51,0,0,0.46);
-    -moz-box-shadow: inset 40px -34px 118px 126px rgba(51,0,0,0.46);
-    box-shadow: inset 40px -34px 118px 126px rgba(51,0,0,0.46);
+    -webkit-box-shadow: inset -7px -13px 107px 7px rgba(0,0,0,0.6);
+-moz-box-shadow: inset -7px -13px 107px 7px rgba(0,0,0,0.6);
+box-shadow: inset -7px -13px 107px 7px rgba(0,0,0,0.6);
+
     background-color: #c80f0fd0;
     display: table-cell;
     vertical-align: middle;
@@ -227,9 +239,9 @@ section {
 
 
 .flexivel {
-    -webkit-box-shadow: 0px -23px 59px -12px rgba(0,0,0,1);
-    -moz-box-shadow: 0px -23px 59px -12px rgba(0,0,0,1);
-    box-shadow: 0px -23px 59px -12px rgba(0,0,0,1);
+    -webkit-box-shadow: 5px 15px 61px 46px rgba(0,0,0,0.6);
+    -moz-box-shadow: 5px 15px 61px 46px rgba(0,0,0,0.6);
+    box-shadow: 5px 15px 61px 46px rgba(0,0,0,0.6);
     display: flex;
 }
 
@@ -277,7 +289,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     display: flex;
-    margin: 0;
     height: 200px;
     background-color: #343437;
     padding: 0px 40px;
