@@ -8,31 +8,37 @@ let checkBox = document.querySelector(".checkBox")
 
 
 let botao = document.getElementById("btn")
-console.log(botao)
 
 botao.onclick=()=>{
-  let arroba = inputEmail.value.indexOf("@")
-  let ponto = inputEmail.value.indexOf(".")
-  let caracter = /[\W_]/
-
+  const arroba = inputEmail.value.indexOf("@")
+  const ponto = inputEmail.value.indexOf(".")
+  const caracter = /[\W_]/
+// verificacao de email.
   if(!inputNome.value.length > 0 || !inputSobreNome.value.length > 0){
     alert("campo de nome não pode estar vazio!")
   }else if(inputEmail.value == ''){ 
     alert("preencha o email!")
-
   } else if(arroba == -1){
     alert("nome precisa ter @")
   } else if(ponto == -1){
     alert("falta o .")
   } else if(arroba > ponto){
     alert("o ponto nao pode estar antes do arroba!")
-  } else
-   if(
-    
-    inputEmail.value.search(caracter) < arroba || inputEmail.value.search(caracter) > ponto
-    ){
-      alert("coloque um caaraacter entre o @ e o '.' ")
+  } else if(
+    inputEmail.value.search(caracter) < arroba){
+      alert("deve haver somente um simbolo depois do arroba")
+  } else if(ponto == arroba+1){
+      alert("coloque um caracter entre o arroba e o ponto")
+  }else if(arroba > ponto){
+    alert("o ponto tem que ser depois do arroba")
   }
+
+//verificacao de telefone.
+
+  if(inputTelefone.value == ''){
+    console.log("o telefone nao pode estar vazio e nao pode ter simbolos")
+  } else if()
+
 
 
 
