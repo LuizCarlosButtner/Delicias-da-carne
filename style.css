@@ -364,6 +364,31 @@ a{
     }
 } */
 
+/* -----------------------------formulario------------------------------------ */
+.formulario{
+    height: 400px;
+    width: 400px;
+    border: 1px solid #fff;
+    margin: 200px 400px;
+}
+.inputs{
+    margin: 10px;
+    background-color: #fff;
+}
+.padrao{
+    margin: 5px;
+    width:150px;
+    height: 30px;
+    background-color: rgba(131, 184, 184, 0.743);
+}
+.textArea > input{
+    height: 100px;
+    width: 200px;
+}
+.nomeSobrenome{
+    display: flex;
+}
+/* -----------------------------formulario------------------------------------ */
 
 
 
