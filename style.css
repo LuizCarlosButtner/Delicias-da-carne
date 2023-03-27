@@ -369,16 +369,16 @@ a{
     height: 400px;
     width: 400px;
     border: 1px solid #fff;
-    margin: 200px 400px;
+    margin: 200px 200px;
 }
 .inputs{
     margin: 10px;
     background-color: #fff;
 }
 .padrao{
-    margin: 5px;
-    width:150px;
-    height: 30px;
+    margin: 19px;
+    width: 345px;
+    height: 54px;
     background-color: rgba(131, 184, 184, 0.743);
 }
 .textArea > input{
@@ -386,7 +386,21 @@ a{
     width: 200px;
 }
 .nomeSobrenome{
+    justify-content: space-between;
     display: flex;
+}
+.radio{
+    display: flex;
+}
+.radioEach{
+    display: flex;
+}
+.checkList{
+    list-style: none;
+    text-align: left ;
+}
+li > svg {
+    width: 16px;
 }
 /* -----------------------------formulario------------------------------------ */
 
