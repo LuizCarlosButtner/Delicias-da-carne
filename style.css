@@ -26,6 +26,19 @@ section {
     box-sizing: border-box;
     margin-bottom: 200px;
 }
+.caixaDoTitulo {
+    -webkit-box-shadow: 40px 32px 61px 12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 40px 32px 61px 12px rgba(0,0,0,0.75);
+    box-shadow: 40px 32px 61px 12px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    padding: 0px 80px;
+    height: 100px;
+    background-color: #c80f0fd0;
+    border-radius: 5px;
+}
 
 
 
@@ -102,7 +115,7 @@ section {
     height: 400px;
 }
 
-.imagemMeio1>h1 {
+.imagemMeio1>div>h1 {
     padding: 110px;
     color: #fff;
     font-size: 76px;
@@ -112,9 +125,7 @@ section {
 }
 
 /* -----------------sec2------------------- */
-#sec2 {}
 
-#sec2,
 #sec4 {
     /* border: 1px solid red; */
     /* align-items: center; */
@@ -156,9 +167,20 @@ section {
 }
 
 .tituloDoCarroussel {
-    width: 270px;
-    /* border: 1px solid red; */
-    text-align: start;
+    -webkit-box-shadow: 40px 32px 61px 12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 40px 32px 61px 12px rgba(0,0,0,0.75);
+    box-shadow: 40px 32px 61px 12px rgba(0, 0, 0, 0.466);
+    display: flex;
+    justify-content: start      ;
+    align-items: center;
+    width: 273px;
+    height: 50px;
+    background-color: #c80f0fd0;
+    border-radius: 5px;
+    margin: 25px 0;
+    padding-left: 10px;
+    box-sizing: border-box;
+    
 }
 
 
@@ -179,7 +201,7 @@ section {
     -webkit-box-shadow: 33px 33px 35px -8px rgba(0, 0, 0, 0.53);
     -moz-box-shadow: 33px 33px 35px -8px rgba(0, 0, 0, 0.53);
     box-shadow: 33px 33px 35px -8px rgba(0, 0, 0, 0.53);
-    border-radius: 20px;
+    border-radius: 5px;
     display: block;
     height: 379px;
     width: 273px;
@@ -436,7 +458,10 @@ li>svg {
 }
 
 /* -----------------------select-------------------------- */
-
+#vazia{
+    padding: 5px;
+    position: relative;
+}
 td {
     width: 100px;
     height: 20px;
@@ -444,8 +469,8 @@ td {
 }
 
 #seta {
-    top: 13px;
-    left: 94px;
+    top: 25%;
+    right: 2px;
     position: absolute;
     color: purple;
 }
@@ -482,7 +507,7 @@ spam {
 
 .bola {
     margin: 3px 3px 0px 5px;
-    border: 2px solid rgb(7, 5, 5);
+    border: 2px solid #fff;
     border-radius: 50px;
     width: 10px;
     height: 10px;

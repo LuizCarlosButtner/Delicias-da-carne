@@ -113,6 +113,7 @@ let todosOsMeios =(elem)=>{
 
 
 let calculador = 0;
+
 let checkClique =(elem)=>{
   if(elem.classList.contains("marcado")){
     elem.classList.remove("marcado");
@@ -136,6 +137,5 @@ let checkClique =(elem)=>{
       document.querySelectorAll(".checkList div li div")[i].classList.add("marcado")
     }
   }
-  console.log(calculador)
 }
 // -----------------------------------checkBox
