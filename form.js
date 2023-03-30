@@ -94,25 +94,27 @@ let radioClicado =(inde)=>{
 
 
 // -----------------------------------checkBox
+let calculador = 0;
+
 let todosOsMeios =(elem)=>{
   if(elem.classList.contains("marcado")){
     for(let i = 0;i<3;i++){
       document.querySelectorAll(".checkList div li div")[i].classList.remove("marcado")
     }
-    calculador = 0
+    
+    calculador = 0;
   } else {
     elem.classList.add("marcado")
     for(let i = 1;i<3;i++){
       document.querySelectorAll(".checkList div li div")[i].classList.add("marcado")
     }
+    document.querySelectorAll(".checkList div li div")[0].innerText = '';
     calculador = 2
   }
   console.log(calculador)
 }
 
 
-
-let calculador = 0;
 
 let checkClique =(elem)=>{
   if(elem.classList.contains("marcado")){
@@ -137,6 +139,7 @@ let checkClique =(elem)=>{
       document.querySelectorAll(".checkList div li div")[i].classList.add("marcado")
     }
   }
+  console.log(calculador)
 }
 // -----------------------------------checkBox
 

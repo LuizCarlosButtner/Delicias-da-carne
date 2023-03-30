@@ -425,22 +425,36 @@ a {
 
 /* -----------------------------formulario------------------------------------ */
 .formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.formularioFlex{
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #c80f0fd0;
     height: 700px;
     width: 400px;
-    border: 1px solid #fff;
-    margin: 200px 200px;
 }
-
+.entradas{
+}
 .inputs {
-    margin: 10px;
+    width: 99%;
+    display: block;
     background-color: #fff;
+    margin-bottom: 20px;
 }
+label {
+    display: block;
+    text-align: start;
+    margin-bottom: 5px;
+  }
 
 .padrao {
-    margin: 19px;
-    width: 345px;
-    height: 120px;
-    background-color: rgba(131, 184, 184, 0.743);
+
+
+
 }
 
 .textArea>input {
@@ -449,26 +463,10 @@ a {
 }
 
 .nomeSobrenome {
-    justify-content: space-between;
     display: flex;
 }
 
-.radio {
-    display: flex;
-}
 
-.radioEach {
-    display: flex;
-}
-
-.checkList {
-    list-style: none;
-    text-align: left;
-}
-
-li>svg {
-    width: 16px;
-}
 
 /* -----------------------select-------------------------- */
 #vazia{
@@ -478,7 +476,7 @@ li>svg {
 td {
     width: 100px;
     height: 20px;
-    border: 3px solid green;
+    border: 1px solid #fff;
 }
 
 #seta {
@@ -503,28 +501,42 @@ table {
 .viraVira {
     transform: rotate(90deg);
 }
+.select{
+
+    justify-content: center;
+    display: flex;
+
+}
 
 /* -----------------------select-------------------------- */
 /* -----------------------------formulario------------------------------------ */
 
 /* // -------------------------------radio button */
-#caixa1 {
-    margin-top: 20px;
+
+.checkList {
+    list-style: none;
+    text-align: left;
+}
+
+#caixa1 > spam{
     display: flex;
 }
-
-spam {
-    line-height: 45px;
+#caixa1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.containerBola{
+    display: flex;
+    align-items: center;
 }
 
-
 .bola {
-    margin: 3px 3px 0px 5px;
     border: 2px solid #fff;
     border-radius: 50px;
     width: 10px;
     height: 10px;
-    margin-top: 15px;
+    margin-right: 5px;
 }
 
 .bolaMarcada {
@@ -533,16 +545,24 @@ spam {
 
 /* // -------------------------------radio button */
 /* -----------------------------------checkBox */
+.checkList{
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
 .containerDaListaCheckBox li{
     display: flex;
+    align-items: center;
 }
 .containerDaListaCheckBox li div{
     width: 10px;
     height: 10px;
-    border: 1px solid blue;
+    border: 1px solid #fff;
+    margin-right: 5px;
 }
 .marcado{
-    background-color: red;
+    background-color: #0075FF;
 }
 .marcarDesmarcarTodos{
     display: flex;
