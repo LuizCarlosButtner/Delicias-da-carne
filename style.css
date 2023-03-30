@@ -193,21 +193,23 @@ section {
 
 /* ---------------verificar o que essa chamada acessa--------------------- */
 .carrossel {
-    justify-content: center;
+
+    /* border: 3px solid goldenrod; */
+    justify-content: start;
     display: flex;
+    overflow: hidden;
 }
 
 .celula {
-    -webkit-box-shadow: 33px 33px 35px -8px rgba(0, 0, 0, 0.53);
-    -moz-box-shadow: 33px 33px 35px -8px rgba(0, 0, 0, 0.53);
-    box-shadow: 33px 33px 35px -8px rgba(0, 0, 0, 0.53);
     border-radius: 5px;
-    display: block;
     height: 379px;
     width: 273px;
-    margin-right: 25px;
-
-    overflow: hidden;
+    margin-right: 10px;
+  
+}
+.control > svg {
+    color: red;
+    
 }
 
 .celula:hover {
@@ -216,8 +218,11 @@ section {
 }
 
 .container {
+    transition: 500ms;
+    padding: 20px 0px;
     display: flex;
-    transition: transform 0.5s ease-in-out;
+
+
 
 }
 
@@ -278,6 +283,13 @@ section {
     -moz-box-shadow: 5px 15px 61px 46px rgba(0, 0, 0, 0.6);
     box-shadow: 5px 15px 61px 46px rgba(0, 0, 0, 0.6);
     display: flex;
+}
+.flex{
+    margin: 0px -30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    
 }
 
 
