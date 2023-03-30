@@ -24,33 +24,13 @@
         </div>
 
         <div id="dropdown">
-            <p class="navLista"><a href="#">Cortes principais</a></p>
+            <p class="navLista"><a href="sec2">Cortes principais</a></p>
             <p class="navLista"><a href="#">Quem somos</a></p>
             <p class="navLista"><a href="#">Carnes Exóticas</a></p>
             <p class="navLista"><a href="#">localização</a></p>
             <p class="navLista"><a href="#">Contato</a></p>
         </div>
     </nav>
-
-
-
-
-    <!-- divTeste -->
-    <div id="divTeste"
-        style=" box-sizing: content-box; height: 200px; width: 300px; border: 2px solid greenyellow; display: none;">
-        <div id="todos" onclick="turnOnOffTodos()"
-            style="height: 20px; width: 20px; border: 2px solid red ; margin: 10px;"></div>
-        <div onclick="turnOnOff(this)" style="height: 20px; width: 20px; border: 2px solid red ; margin: 10px;"></div>
-        <div onclick="turnOnOff(this)" style="height: 20px; width: 20px; border: 2px solid red ; margin: 10px;"></div>
-        <div onclick="turnOnOff(this)" style="height: 20px; width: 20px; border: 2px solid red ; margin: 10px;"></div>
-
-    </div>
-    <!-- divTeste -->
-
-
-
-
-
 
     <section id="sec1">
         <div class="main imagemMeio1">
@@ -71,12 +51,12 @@
             <h3>Cortes Bovinos</h3>
         </div>
         <div class="flex">
-            <div class="prev-btn arrow-left control" >
+            <div onclick="botaoEsq(0)" class="prev-btn arrow-left control" >
                 <svg width="30px" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff" transform="rotate(90)matrix(1, 0, 0, -1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_up [#337]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-260.000000, -6684.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M223.707692,6534.63378 L223.707692,6534.63378 C224.097436,6534.22888 224.097436,6533.57338 223.707692,6533.16951 L215.444127,6524.60657 C214.66364,6523.79781 213.397472,6523.79781 212.616986,6524.60657 L204.29246,6533.23165 C203.906714,6533.6324 203.901717,6534.27962 204.282467,6534.68555 C204.671211,6535.10081 205.31179,6535.10495 205.70653,6534.69695 L213.323521,6526.80297 C213.714264,6526.39807 214.346848,6526.39807 214.737591,6526.80297 L222.294621,6534.63378 C222.684365,6535.03868 223.317949,6535.03868 223.707692,6534.63378" id="arrow_up-[#337]"> </path> </g> </g> </g> </g></svg>
             </div>
             <div class="main carrossel carnesPrincipal">
             
-                <div class="container" id="container">
+                <div class="container">
 
                     <div class="celula">
                         <div class="cel1 celCel1">
@@ -84,7 +64,7 @@
                         </div>
                         <div class="cel2">
                         </div>
-                    </div>
+                    </div>  
                     <div class="celula">
                         <div class="cel1 celCel1">
                             <img class="imgCircular" src="img/fotos_churranscaria/normais/ancho  e chorizo.jpg" alt="">
@@ -94,12 +74,33 @@
                     </div>                    
                     <div class="celula">
                         <div class="cel1 celCel1">
-                            <img class="imgCircular" src="img/fotos_churranscaria/normais/picanha-uruguaia-premium.png" alt="">
+                            <img class="imgCircular" src="img/fotos_churranscaria/normais/ancho-angus.jpeg" alt="">
                         </div>
                         <div class="cel2">
                         </div>
                     </div>
 
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/normais/Baby Beef Grill.jpg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/normais/bife-de-tiras-angus.jpg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/normais/picanha-uruguaia-premium.png" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
                     <div class="celula">
                         <div class="cel1">
                             <img class="imgCircular" src="img/fotos_churranscaria/normais/primeRibs.jpg" alt="">
@@ -128,31 +129,11 @@
                         <div class="cel2">
                         </div>
                     </div>
-                    <div class="celula">
-                        <div class="cel1">
-                            <img class="imgCircular" src="img/fotos_churranscaria/normais/ancho-angus.jpeg" alt="">
-                        </div>
-                        <div class="cel2">
-                        </div>
-                    </div>
-                    <div class="celula">
-                        <div class="cel1">
-                            <img class="imgCircular" src="img/fotos_churranscaria/normais/Baby Beef Grill.jpg" alt="">
-                        </div>
-                        <div class="cel2">
-                        </div>
-                    </div>
-                    <div class="celula">
-                        <div class="cel1">
-                            <img class="imgCircular" src="img/fotos_churranscaria/normais/bife-de-tiras-angus.jpg" alt="">
-                        </div>
-                        <div class="cel2">
-                        </div>
-                    </div>
+                    
                 </div>
                 
             </div>
-            <div class="next-btn arrow-right control">
+            <div onclick="botaoDir(0)" class="control">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" viewBox="0 -4.5 20 20" version="1.1" fill="#ffffff" stroke="#ffffff" transform="rotate(90)">
 
                     <g id="SVGRepo_bgCarrier" stroke-width="0"/>
@@ -191,46 +172,114 @@
         </div>
 
         <div class="tituloDoCarroussel">
-            <h3>Cortes exoticos</h3>
+            <h3>Cortes Bovinos</h3>
         </div>
-
-        <div class="main carrossel carnesExoticas">
-            <div class="celula">
-                <div class="cel1">
-                    <img class="imgCircular" src="img/fotos_churranscaria/exoticas/carne caprina.jpg" alt="">
-                </div>
-                <div class="cel2">
-
-                </div>
-
+        <div class="flex">
+            <div onclick="botaoEsq(1)" class="prev-btn arrow-left control" >
+                <svg width="30px" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#ffffff" stroke="#ffffff" transform="rotate(90)matrix(1, 0, 0, -1, 0, 0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow_up [#337]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-260.000000, -6684.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M223.707692,6534.63378 L223.707692,6534.63378 C224.097436,6534.22888 224.097436,6533.57338 223.707692,6533.16951 L215.444127,6524.60657 C214.66364,6523.79781 213.397472,6523.79781 212.616986,6524.60657 L204.29246,6533.23165 C203.906714,6533.6324 203.901717,6534.27962 204.282467,6534.68555 C204.671211,6535.10081 205.31179,6535.10495 205.70653,6534.69695 L213.323521,6526.80297 C213.714264,6526.39807 214.346848,6526.39807 214.737591,6526.80297 L222.294621,6534.63378 C222.684365,6535.03868 223.317949,6535.03868 223.707692,6534.63378" id="arrow_up-[#337]"> </path> </g> </g> </g> </g></svg>
             </div>
+            <div class="main carrossel carnesPrincipal">
+            
+                <div class="container">
 
-            <div class="celula">
-                <div class="cel1">
-                    <img class="imgCircular" src="img/fotos_churranscaria/exoticas/carne-de-javali.jpg" alt="">
+                    <div class="celula">
+                        <div class="cel1 celCel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/avestruz.png" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1 celCel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/carne caprina.jpg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>                    
+                    <div class="celula">
+                        <div class="cel1 celCel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/carne-cabrito.png" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/carne-de-javali.jpg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/codorna.jpg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/coelho.jpeg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/costelinha-suina.png" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/coxa-de-pato.jpg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/jacare.jpg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/pato.jpeg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/peito-de-pato.jpg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
+                    <div class="celula">
+                        <div class="cel1">
+                            <img class="imgCircular" src="img/fotos_churranscaria/exoticas/pernil-de-leitao.jpg" alt="">
+                        </div>
+                        <div class="cel2">
+                        </div>
+                    </div>
                 </div>
-                <div class="cel2">
-
-                </div>
-
+                
             </div>
-            <div class="celula">
-                <div class="cel1">
-                    <img class="imgCircular" src="img/fotos_churranscaria/exoticas/codorna.jpg" alt="">
-                </div>
-                <div class="cel2">
+            <div onclick="botaoDir(1)" class="control">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30px" viewBox="0 -4.5 20 20" version="1.1" fill="#ffffff" stroke="#ffffff" transform="rotate(90)">
 
-                </div>
-
-            </div>
-            <div class="celula">
-                <div class="cel1">
-                    <img class="imgCircular" src="img/fotos_churranscaria/exoticas/pato.jpeg" alt="">
-                </div>
-                <div class="cel2">
-
-                </div>
-
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    
+                    <g id="SVGRepo_iconCarrier"> <title>arrow_up [#337]</title> <desc>Created with Sketch.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-260.000000, -6684.000000)" fill="#ffffff"> <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M223.707692,6534.63378 L223.707692,6534.63378 C224.097436,6534.22888 224.097436,6533.57338 223.707692,6533.16951 L215.444127,6524.60657 C214.66364,6523.79781 213.397472,6523.79781 212.616986,6524.60657 L204.29246,6533.23165 C203.906714,6533.6324 203.901717,6534.27962 204.282467,6534.68555 C204.671211,6535.10081 205.31179,6535.10495 205.70653,6534.69695 L213.323521,6526.80297 C213.714264,6526.39807 214.346848,6526.39807 214.737591,6526.80297 L222.294621,6534.63378 C222.684365,6535.03868 223.317949,6535.03868 223.707692,6534.63378" id="arrow_up-[#337]"> </path> </g> </g> </g> </g>
+                    
+                    </svg>
             </div>
         </div>
     </section>

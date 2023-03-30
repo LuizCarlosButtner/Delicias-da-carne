@@ -33,7 +33,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1000px;
+    width: 1030px;
     padding: 0px 80px;
     height: 100px;
     background-color: #c80f0fd0;
@@ -204,7 +204,7 @@ section {
     border-radius: 5px;
     height: 379px;
     width: 273px;
-    margin-right: 10px;
+    margin-right: 20px;
   
 }
 .control > svg {
@@ -227,6 +227,7 @@ section {
 }
 
 .cel1 {
+    overflow: hidden;
     height: 65%;
     width: 273px;
 }

@@ -1,25 +1,24 @@
-const container = document.querySelector('.container');
-const prevButton = document.querySelector('.arrow-left');
-const nextButton = document.querySelector('.arrow-right');
-
+const container = document.querySelectorAll('.container')
 let currentIndex = 0;
 
-
-nextButton.addEventListener('click', () => {
-  if (currentIndex < 13) {
+function botaoEsq(param){
+  let tamanho = 13;
+  if (param == 1){
+    tamanho = 15
+  }
+  if (currentIndex < tamanho) {
     currentIndex++;
-    container.style.transform = `translateX(-${currentIndex * 4.5}%)`;
+    container[param].style.transform = `translateX(-${currentIndex * 4.5}%)`;
   }
 
-});
+}
 
-prevButton.addEventListener('click', () => {
+function botaoDir(param){
   if (currentIndex > 0) {
     currentIndex--;
-    container.style.transform = `translateX(-${currentIndex * 4.5}%)`;
+    container[param].style.transform = `translateX(-${currentIndex * 4.5}%)`;
   }
- 
-});
+}
 
 
 
