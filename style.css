@@ -434,11 +434,11 @@ a {
     box-sizing: border-box;
     padding: 30px;
     background-color: #c80f0fd0;
-    height: 700px;
-    width: 400px;
+    height: 750px;
+    width: 500px;
+    margin: 100px;
 }
-.entradas{
-}
+
 .inputs {
     width: 99%;
     display: block;
@@ -451,16 +451,7 @@ label {
     margin-bottom: 5px;
   }
 
-.padrao {
 
-
-
-}
-
-.textArea>input {
-    height: 100px;
-    width: 200px;
-}
 
 .nomeSobrenome {
     display: flex;
@@ -474,19 +465,23 @@ label {
     position: relative;
 }
 td {
-    width: 100px;
+    width: 200px;
     height: 20px;
     border: 1px solid #fff;
 }
 
 #seta {
     top: 25%;
-    right: 2px;
+    right: 5px;
     position: absolute;
-    color: purple;
+    color: #fff;
+    transition: 500ms;
 }
 
 table {
+    z-index: 1;
+    position: absolute;
+    background-color: #c80f0f;
     border-collapse: collapse;
 }
 
@@ -496,17 +491,40 @@ table {
 
 .viradoPraBaixo {
     transform: rotate(90deg);
+    transition: 500ms;
 }
 
 .viraVira {
     transform: rotate(90deg);
+    transition: 500ms;
 }
 .select{
-
     justify-content: center;
     display: flex;
 
 }
+.classeTeste{
+    position: absolute;
+    background-color: red;
+}
+
+
+
+/* ------------------------------textArea and button -----------------------*/
+.textArea>textarea {
+    height: 167px;
+    width: 391px;
+    margin-bottom: 20px;
+}
+
+
+.containerTextButton{
+position: relative;
+bottom: -60px;
+}
+
+/* ------------------------------textArea and button -----------------------*/
+
 
 /* -----------------------select-------------------------- */
 /* -----------------------------formulario------------------------------------ */
@@ -541,6 +559,9 @@ table {
 
 .bolaMarcada {
     background-color: #0075FF;
+}
+.radio{
+    margin-bottom: 20px;
 }
 
 /* // -------------------------------radio button */

@@ -24,18 +24,14 @@
         <div class="formularioFlex">
             <div class="entradas">
 
+                <label for="txt">Nome</label>
+                <input class="inputs" type="text" id="inputNome">
 
-                <label for="txt">Seu Texto</label>
-                
-                <input class="inputs" type="text" id="inputNome" placeholder="inputNome">
+                <label for="txt">E-mail</label>
+                <input class="inputs" type="email" id="inputEmail">
 
-                <label for="txt">Seu Texto</label>
-                <input class="inputs" type="text" id="inputEmail" placeholder="inputEmail">
-                <label for="tel">Seu Texto</label>
-                
-                <input class="inputs" type="tel" id="inputTelefone" placeholder="inputTelefone">
-
-
+                <label for="tel">Telefone</label>
+                <input class="inputs" type="tel" id="inputTelefone">
             </div>
             <!-- ---------------------radio button -->
             <div class="padrao radio">
@@ -56,7 +52,7 @@
                 </div>
             </div>
             <!-- ---------------------------checkBox -->
-            <label for=""></label>
+            <label class="enviarPor">Enviar Por</label>
             <div class="padrao" class="select">
                 <ul class="checkList">
                     <div class="containerDaListaCheckBox">
@@ -84,6 +80,7 @@
                     <tbody>
                         <tr>
                             <td id="vazia">
+                                Selecionar 
                                 <svg id="seta" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" lass="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
                                     <path
@@ -92,26 +89,28 @@
                             </td>
                         </tr>
                         <tr>
-                            <td onclick="esse(this)" id="primeira" class="hide">nome-1</td>
+                            <td onclick="esse(this)" id="primeira" class="hide">Bovina</td>
                         </tr>
                         <tr>
-                            <td onclick="esse(this)" class="hide">nome-2</td>
+                            <td onclick="esse(this)" class="hide">Suína</td>
                         </tr>
                         <tr>
-                            <td onclick="esse(this)" class="hide">nome-3</td>
+                            <td onclick="esse(this)" class="hide">Aves</td>
                         </tr>
                         <tr>
-                            <td onclick="esse(this)" class="hide">nome-4</td>
+                            <td onclick="esse(this)" class="hide">Frutos do Mar</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <!--0-------------------------- select  -->
-            <div class="textArea"><input type="text"></div><br>
-
-
-            <button id="btn">enviar</button>
-
+            <div class="containerTextButton">
+                <label for="">Mensagem</label>
+                <div class="textArea">
+                    <textarea></textarea>
+                </div>
+                <button id="btn">Enviar formulario</button>
+            </div>
         </div>
     </div>
     <script src="form.js"></script>

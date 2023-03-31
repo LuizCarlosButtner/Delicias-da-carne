@@ -5,6 +5,7 @@ let inputTelefone = document.getElementById("inputTelefone")
 let radio = document.querySelector(".radio")
 let select = document.querySelector(".select")
 let checkBox = document.querySelector(".checkBox")
+let textarea = document.querySelector("textarea")
 
 
 
@@ -15,9 +16,17 @@ botao.onclick=()=>{
   const ponto = inputEmail.value.indexOf(".")
   const caracter = /[\W_]/
 // verificacao de email.
-  if(!inputNome.value.length > 0 || !inputSobreNome.value.length > 0){
-    alert("campo de nome não pode estar vazio!")
-  } else if(inputEmail.value == ''){ 
+  if(inputNome.value.length < 1){
+    alert("Digite seu nome")
+  } else if (!inputNome.value.includes(' ')){
+    alert(" coloque espaço no nome")
+  }
+
+
+
+  
+  
+  else if(inputEmail.value == ''){ 
     alert("preencha o email!")
   } else if(arroba == -1){
     alert("nome precisa ter @")
@@ -30,19 +39,24 @@ botao.onclick=()=>{
   } else if(arroba > ponto){
     alert("o ponto tem que ser depois do arroba")
   } else if(inputEmail.value.search(caracter) > arroba && inputEmail.value.search(caracter) < ponto){
-    console.log("dentro")
+    alert("caracter dentro")
   }
 
 //verificacao de telefone.
 
-  if(inputTelefone.value == ''){
-    console.log("o telefone nao pode estar vazio e nao pode ter simbolos")
+  else if(inputTelefone.value == ''){
+    alert("o telefone nao pode estar vazio e nao pode ter simbolos")
   } else if(inputTelefone.value.length !== 11){
     alert("o campo de telefone deve ter 11 numeros, verifique se o numero esta correto ou se voce colocou o DDD")
   } else if(inputTelefone.value.search(caracter) >= 0){
     alert("tem um caractere dentro do numero")
   }
-  console.log("enviou!!!!")
+
+  // verificaçao de mesnsagem 
+
+  else if(textarea.value.length < 5){
+    alert("Minimo 5 caracteres no texto")
+  }
 }
 
 // =------------------------------select button
@@ -57,7 +71,6 @@ let svg = '<svg id="seta" xmlns="http://www.w3.org/2000/svg" width="16" height="
 // =------------------------------select button
 vazia.onclick =()=>{ 
   hide()
-  mudaSeta()
 }
 
 function esse(a){
@@ -111,7 +124,6 @@ let todosOsMeios =(elem)=>{
     document.querySelectorAll(".checkList div li div")[0].innerText = '';
     calculador = 2
   }
-  console.log(calculador)
 }
 
 
@@ -139,7 +151,6 @@ let checkClique =(elem)=>{
       document.querySelectorAll(".checkList div li div")[i].classList.add("marcado")
     }
   }
-  console.log(calculador)
 }
 // -----------------------------------checkBox
 
