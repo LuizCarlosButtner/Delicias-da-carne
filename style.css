@@ -40,7 +40,61 @@ section {
     border-radius: 5px;
 }
 
+/* -------------------------------------------------celula */
 
+.celula {
+    color: #1f1f21;
+    border-radius: 5px;
+    height: 379px;
+    width: 273px;
+    margin-right: 20px;
+  
+}
+.tituloCard{
+    background-color: none;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 5px;
+
+}
+
+.cel1 {
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 65%;
+    width: 273px;
+}
+
+.imgCircular {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.cel2 {
+    box-sizing: border-box;
+    padding: 8px;
+    background-color: #fff;
+    width: 100%;
+    height: 35%;
+    border-radius: 0px 0px 10px 10px;
+}
+.containerCardInf{
+    /* display: flex; */
+}
+.informacoes{
+    text-align: center;
+    margin: 0;
+}
+
+
+
+.celula:hover {
+    scale: 1.1;
+    transition: 250ms;
+}
+
+
+
+/* -------------------------------------------------celula */
 
 
 /* ----------------------------------------------------- */
@@ -200,22 +254,12 @@ section {
     overflow: hidden;
 }
 
-.celula {
-    border-radius: 5px;
-    height: 379px;
-    width: 273px;
-    margin-right: 20px;
-  
-}
 .control > svg {
     color: red;
     
 }
 
-.celula:hover {
-    scale: 1.1;
-    transition: 250ms;
-}
+
 
 .container {
     transition: 500ms;
@@ -226,23 +270,6 @@ section {
 
 }
 
-.cel1 {
-    overflow: hidden;
-    height: 65%;
-    width: 273px;
-}
-
-.imgCircular {
-    border-radius: 10px 10px 0px 0px;
-}
-
-.cel2 {
-    background-color: #fff;
-    /* border: 1px solid greenyellow; */
-    width: 100%;
-    height: 35%;
-    border-radius: 0px 0px 10px 10px;
-}
 
 .divDaImagem {
     /* border: 1px solid greenyellow; */

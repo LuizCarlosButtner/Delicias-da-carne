@@ -24,19 +24,19 @@ function botaoDir(param) {
 const arrayNormais = [
   {
     nome: 'Alcatra',
-    calorias: 188,
-    proteina: 28.5,
-    carboidrato: 0,
-    gorduraTotal: 7.4,
-    gorduraSaturada: 2.9,
-    gorduraTrans: 0,
-    fibraAlimentar: 0,
-    sodio: 66,
-    colesterol: 90
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg"
   },
   {
     nome: 'Wagyu',
-    calorias: '710',
+    calorias: '710 kcal',
     proteina: '30 g',
     carboidrato: '0 g',
     gorduraTotal: '65 g',
@@ -48,7 +48,7 @@ const arrayNormais = [
   },
   {
     nome: 'Prime Ribs',
-    calorias: '369',
+    calorias: '369 kcal',
     proteina: '22 g',
     carboidrato: '0 g',
     gorduraTotal: '30 g',
