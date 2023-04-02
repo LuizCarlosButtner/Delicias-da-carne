@@ -6,28 +6,29 @@ let radio = document.querySelector(".radio")
 let select = document.querySelector(".select")
 let checkBox = document.querySelector(".checkBox")
 let textarea = document.querySelector("textarea")
-
-
-
 let botao = document.getElementById("btn")
+
 
 botao.onclick=()=>{
   const arroba = inputEmail.value.indexOf("@")
   const ponto = inputEmail.value.indexOf(".")
   const caracter = /[\W_]/
-// verificacao de email.
+
+// verificacao de nome.
   if(inputNome.value.length < 1){
-    alert("Digite seu nome")
+    alert("campo nome não pode estar vazio!")
+  } else if(inputNome.value.includes('  ')){
+    alert("Permitido somente um espaço no campo nome")
   } else if (!inputNome.value.includes(' ')){
-    alert(" coloque espaço no nome")
+    alert("coloque no mínimo 2 nomes separados por espaço")
+  } else if(inputNome.value.indexOf(' ') == inputNome.value.length-1){
+    alert("coloque no mínimo 2 nomes separados por espaço")
   }
-
-
-
-  
-  
+  // verificacao de email.
   else if(inputEmail.value == ''){ 
     alert("preencha o email!")
+  } else if(inputEmail.value.includes(' ')){
+    inputEmail.value = inputEmail.value.replace(/ /g, '');
   } else if(arroba == -1){
     alert("nome precisa ter @")
   } else if(ponto == -1){
@@ -41,23 +42,42 @@ botao.onclick=()=>{
   } else if(inputEmail.value.search(caracter) > arroba && inputEmail.value.search(caracter) < ponto){
     alert("caracter dentro")
   }
-
-//verificacao de telefone.
-
-  else if(inputTelefone.value == ''){
-    alert("o telefone nao pode estar vazio e nao pode ter simbolos")
-  } else if(inputTelefone.value.length !== 11){
-    alert("o campo de telefone deve ter 11 numeros, verifique se o numero esta correto ou se voce colocou o DDD")
+    //verificacao de telefone.
+   else if(inputTelefone.value.length < 1 || inputTelefone.value.length>11){
+    alert("O telefone deve ter 11 numeros")
   } else if(inputTelefone.value.search(caracter) >= 0){
     alert("tem um caractere dentro do numero")
   }
+    // verificaçao de select
+   else if(document.getElementById('vazia').innerText ==  'Selecionar'){
+    alert("selecione ao menos um tipo de carne")
+  } else if(!document.querySelectorAll(".verificar")[0].classList.contains("marcado")&&!document.querySelectorAll(".verificar")[1].classList.contains("marcado")&&!document.querySelectorAll(".verificar")[2].classList.contains("marcado") 
 
-  // verificaçao de mesnsagem 
+  )
+  {
+    alert("escolha o modo de envio!")
+}
 
-  else if(textarea.value.length < 5){
+    // verificaçao de mesnsagem 
+
+   else if(textarea.value.length < 5){
     alert("Minimo 5 caracteres no texto")
   }
+   
+  console.log("enviado")
 }
+
+// =------------------------------ substituirCaracteres
+function substituirCaracteres(input) {
+
+  input.value = input.value.replace(/\(/g, '');
+  input.value = input.value.replace(/\)/g, '');
+  input.value = input.value.replace(/\-/g, '');
+  input.value = input.value.replace(/ /g, '');
+}
+// =------------------------------ substituirCaracteres
+
+
 
 // =------------------------------select button
 

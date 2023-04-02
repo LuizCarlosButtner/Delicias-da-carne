@@ -457,11 +457,11 @@ a {
     align-items: center;
 
 }
-.formularioFlex{
+.divFormularioInterna{
     box-sizing: border-box;
     padding: 30px;
     background-color: #c80f0fd0;
-    height: 750px;
+    height: 820px;
     width: 500px;
     margin: 100px;
 }

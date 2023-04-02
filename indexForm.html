@@ -21,7 +21,8 @@
 
 
     <div class="formulario">
-        <div class="formularioFlex">
+        <div class="divFormularioInterna">
+            <h1>Fale Conosco</h1>
             <div class="entradas">
 
                 <label for="txt">Nome</label>
@@ -31,7 +32,7 @@
                 <input class="inputs" type="email" id="inputEmail">
 
                 <label for="tel">Telefone</label>
-                <input class="inputs" type="tel" id="inputTelefone">
+                <input class="inputs" type="tel" id="inputTelefone" oninput="substituirCaracteres(this)">
             </div>
             <!-- ---------------------radio button -->
             <div class="padrao radio">
@@ -57,17 +58,17 @@
                 <ul class="checkList">
                     <div class="containerDaListaCheckBox">
                         <li>
-                            <div class=" marcarDesmarcarTodos" onclick="todosOsMeios(this)"></div><p>Todos os meios</p>
+                            <div class="marcarDesmarcarTodos verificar" onclick="todosOsMeios(this)"></div><p>Todos os meios</p>
                         </li>
                     </div>
                     <div class="containerDaListaCheckBox">
                         <li>
-                            <div onclick="checkClique(this)"></div><p>E-mail</p>
+                            <div class="verificar" onclick="checkClique(this)"></div><p>SMS</p>
                         </li>
                     </div>
                     <div class="containerDaListaCheckBox">
                         <li>
-                            <div onclick="checkClique(this)"></div><p>SMS</p>
+                            <div class="verificar" onclick="checkClique(this)"></div><p>E-mail</p>
                         </li>
                     </div>
                 </ul>
