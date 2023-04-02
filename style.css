@@ -398,8 +398,7 @@ footer {
 }
 
 .icones {
-    padding-right: 20px;
-    margin-bottom: 40px;
+
 }
 
 .fi {
@@ -414,21 +413,28 @@ footer {
 
 .iconeDentro {
     display: flex;
-    justify-content: space-around;
-    width: 170px;
+    justify-content: space-between;
 
 }
-
+.iconeDentro > a > svg {
+    padding: 0 3px;
+    scale: 1.5;
+} 
+.iconeDentro > a > svg:hover {
+    scale: 2.5;
+} 
+/* verificar onde o "a" afeta */
 a {
     text-decoration: none;
 }
 
 
 #absolute {
-    display: none;
+    margin-top: 20px;
+    left: 1805px;
+    position: absolute;
     bottom: 200px;
     position: sticky;
-    z-index: 1;
     color: #fff;
     background-color: rgb(247, 171, 25);
     border-radius: 8px;

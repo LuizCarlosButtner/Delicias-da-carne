@@ -21,6 +21,10 @@ function botaoDir(param) {
 }
 // -------------------------------------------------------------------------
 
+
+
+
+
 const arrayNormais = [
   {
     nome: 'Alcatra',
@@ -301,4 +305,13 @@ const arrayExoticas = [
     colesterol: '47 mg'
   },
 ]
+  let listaDeCarnesNormais = document.querySelectorAll('carnesNormais')
+  let containerParaCelulas = document.querySelectorAll('carnesNormais')
+  
+
+let criarElemento =()=>{
+  arrayNormais.forEach((celula)=>{
+
+  })
+}
 
