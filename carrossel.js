@@ -36,7 +36,8 @@ const arrayNormais = [
     gorduraTrans: "0 g",
     fibraAlimentar: "0g ",
     sodio: "66 mg",
-    colesterol: "90 mg"
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/normais/alcatra.jpg" 
   },
   {
     nome: 'Wagyu',
@@ -48,7 +49,8 @@ const arrayNormais = [
     gorduraTrans: '3,3 g',
     fibraAlimentar: '0 g',
     sodio: '57 mg',
-    colesterol: '120 mg'
+    colesterol: '120 mg',
+    imagem:"img/fotos_churrascaria/normais/wagyu.jpeg" 
   },
   {
     nome: 'Prime Ribs',
@@ -60,7 +62,8 @@ const arrayNormais = [
     gorduraTrans: '1,5 g',
     fibraAlimentar: '0 g',
     sodio: '62 mg',
-    colesterol: '82 mg'
+    colesterol: '82 mg',
+    imagem:"img/fotos_churrascaria/normais/primeRibs.jpg" 
   },
   {
     nome: 'Ancho Angus',
@@ -72,7 +75,8 @@ const arrayNormais = [
     gorduraTrans: '0,4 g',
     fibraAlimentar: '0 g',
     sodio: '60 mg',
-    colesterol: '85 mg'
+    colesterol: '85 mg',
+    imagem:"img/fotos_churrascaria/normais/ancho-angus.jpeg" 
   },
   {
     nome: 'Picanha Uruguaia Premium',
@@ -84,7 +88,8 @@ const arrayNormais = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '53 mg',
-    colesterol: '73 mg'
+    colesterol: '73 mg',
+    imagem:"img/fotos_churrascaria/normais/picanha-uruguaia-premium.png" 
   },
   {
     nome: 'T-Bone',
@@ -96,7 +101,8 @@ const arrayNormais = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '80 mg',
-    colesterol: '74 mg'
+    colesterol: '74 mg',
+    imagem:"img/fotos_churrascaria/normais/T-bone.jpg" 
   },
   {
     nome: 'Tira de Angus',
@@ -108,7 +114,8 @@ const arrayNormais = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '58 mg',
-    colesterol: '80 mg'
+    colesterol: '80 mg',
+    imagem:"img/fotos_churrascaria/normais/tira-de-angus.png" 
   },
   {
     nome: 'Bife de Tiras de Angus',
@@ -120,7 +127,8 @@ const arrayNormais = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '70 mg',
-    colesterol: '80 mg'
+    colesterol: '80 mg',
+    imagem:"img/fotos_churrascaria/normais/bifeDeTirasAngus.jpg" 
   },
   {
     nome: 'Baby Beef',
@@ -132,21 +140,25 @@ const arrayNormais = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '62,4 mg',
-    colesterol: '91,2 mg'
+    colesterol: '91,2 mg',
+    imagem:"img/fotos_churrascaria/normais/BabyBeefGrill.jpg" 
   },
   {
     nome: 'Ancho e Chorizo',
-    calorias: 232,
-    proteina: 23.7,
-    carboidrato: 0.3,
-    gorduraTotal: 15.3,
-    gorduraSaturada: 6.2,
-    gorduraTrans: 0.6,
-    fibraAlimentar: 0,
-    sodio: 64,
-    colesterol: 83
+    calorias: "232 kcal",
+    proteina: "23.7 g",
+    carboidrato: "0.3 g",
+    gorduraTotal: "15.3 g",
+    gorduraSaturada: "6.2 g",
+    gorduraTrans: "0.6 g",
+    fibraAlimentar: "0 g g",
+    sodio: "64 mg",
+    colesterol: "83 mg",
+    imagem: "img/fotos_churrascaria/normais/anchoEchorizo.jpg" 
   }
 ]
+
+
 const arrayExoticas = [
   {
     nome: 'Carne de avestruz',
@@ -158,7 +170,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '63 mg',
-    colesterol: '56 mg'
+    colesterol: '56 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Carne de cabrito',
@@ -170,7 +183,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '85 mg',
-    colesterol: '112 mg'
+    colesterol: '112 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Carne caprina',
@@ -182,7 +196,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '56 mg',
-    colesterol: '71 mg'
+    colesterol: '71 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Carne de javali',
@@ -194,7 +209,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '51 mg',
-    colesterol: '78 mg'
+    colesterol: '78 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Codorna',
@@ -206,7 +222,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '66 mg',
-    colesterol: '139 mg'
+    colesterol: '139 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Coelho',
@@ -218,7 +235,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '84 mg',
-    colesterol: '82 mg'
+    colesterol: '82 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Costela Suína',
@@ -230,7 +248,8 @@ const arrayExoticas = [
     gorduraTrans: '0,6 g',
     fibraAlimentar: '0 g',
     sodio: '91 mg',
-    colesterol: '92 mg'
+    colesterol: '92 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Carne de Pato',
@@ -242,7 +261,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '82 mg',
-    colesterol: '96 mg'
+    colesterol: '96 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Jacaré',
@@ -254,7 +274,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '51 mg',
-    colesterol: '65 mg'
+    colesterol: '65 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Peito de Pato',
@@ -266,7 +287,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '74 mg',
-    colesterol: '110 mg'
+    colesterol: '110 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Coxa de Pato',
@@ -278,7 +300,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '86 mg',
-    colesterol: '103 mg'
+    colesterol: '103 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Pernil de Leitão',
@@ -290,7 +313,8 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '80 mg',
-    colesterol: '92 mg'
+    colesterol: '92 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
   {
     nome: 'Rã',
@@ -302,16 +326,46 @@ const arrayExoticas = [
     gorduraTrans: '0 g',
     fibraAlimentar: '0 g',
     sodio: '51 mg',
-    colesterol: '47 mg'
+    colesterol: '47 mg',
+    imagem:"img/fotos_churrascaria/exoticas/" 
   },
 ]
-  let listaDeCarnesNormais = document.querySelectorAll('carnesNormais')
-  let containerParaCelulas = document.querySelectorAll('carnesNormais')
-  
+let listaDeCarnesNormais = document.querySelectorAll('carnesNormais')
+let containerParaCelulas = document.querySelectorAll('carnesNormais')
+let containerA = document.querySelector('.container')
 
-let criarElemento =()=>{
-  arrayNormais.forEach((celula)=>{
+
+let criarElemento = () => {
+  arrayNormais.forEach((celula) => {
+
+    var divNova = document.createElement("div");
+    divNova.classList.add("celula", "carnesNormais")
+
+    divNova.innerHTML = `
+      <div class="cel1 celCel1">
+        <img class="imgCircular" src=${celula.imagem} alt="${celula.nome}">
+      </div>
+      <div class="cel2">
+        <h3 class="tituloCard">${celula.nome}</h3>
+          <div class="containerCardInf">
+
+            <p class="informacoes calorias">Calorias: ${celula.calorias} </p>
+            <p class="informacoes gordurastotais">Gordura: ${celula.gorduraTotal}</p>
+            <p class="informacoes sodio">Sódio: ${celula.sodio} </p>
+            <p class="informacoes colesterol">Colesterol: ${celula.colesterol} </p>
+
+          </div>
+      </div>`
+
+    containerA.appendChild(divNova)
+
+
+
+    console.log(divNova)
+    console.log(celula)
+
 
   })
 }
+criarElemento()
 
