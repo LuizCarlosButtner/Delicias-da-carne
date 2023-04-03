@@ -52,7 +52,7 @@ botao.onclick=()=>{
    else if(document.getElementById('vazia').innerText ==  'Selecionar'){
     alert("selecione ao menos um tipo de carne")
   } else if(!document.querySelectorAll(".verificar")[0].classList.contains("marcado")&&!document.querySelectorAll(".verificar")[1].classList.contains("marcado")&&!document.querySelectorAll(".verificar")[2].classList.contains("marcado") 
-  
+
   )
   {
     alert("escolha o modo de envio!")
@@ -171,7 +171,15 @@ let checkClique =(elem)=>{
       document.querySelectorAll(".checkList div li div")[i].classList.add("marcado")
     }
   }
-}
-// -----------------------------------checkBox
+  var minhaDiv = document.getElementById("minha-div");
+  minhaDiv.classList.add("mostrar");
 
- 
+  setTimeout(function() {
+    minhaDiv.classList.remove("mostrar");
+  }, 2000);
+
+
+
+}
+
+
