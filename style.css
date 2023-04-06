@@ -660,3 +660,12 @@ bottom: -60px;
     opacity: 1;  
 }
       
+.qRimg{
+    bottom: -3184px;
+    right: 278px;
+    width: 180px;
+    display: none;
+}
+.aparecer{
+    display: block;
+}
