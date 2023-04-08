@@ -19,11 +19,496 @@ function botaoDir(param) {
     container[param].style.transform = `translateX(-${currentIndex * 4.5}%)`;
   }
 }
+
+
 // -------------------------------------------------------------------------
 
+const profLauro= [
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
+  {
+    nome: 'Prof. Lauro',
+    calorias: "188 kcal",
+    proteina: "28.5 g",
+    carboidrato: "0 g",
+    gorduraTotal: "7.4 g",
+    gorduraSaturada: "2.9 g",
+    gorduraTrans: "0 g",
+    fibraAlimentar: "0g ",
+    sodio: "66 mg",
+    colesterol: "90 mg",
+    imagem:"img/fotos_churrascaria/ProfLauro.jpg" 
+  },
 
-
+]
+// -------------------------------------------------------------------------
 
 const arrayNormais = [
   {
@@ -417,7 +902,7 @@ const arrayNormais = [
     imagem: "img/fotos_churrascaria/normais/anchoEchorizo.jpg" 
   }
 ]
-
+// -------------------------------------------------------------------------
 
 const arrayExoticas = [
   {
@@ -1098,9 +1583,6 @@ const arrayExoticas = [
   },
 ]
 
-let containerA = document.querySelector('.container')
-
-
 let criarElemento = (p1,p2,p3) => {
   p1.forEach((celula) => {
 
@@ -1126,5 +1608,11 @@ let criarElemento = (p1,p2,p3) => {
     p3.appendChild(divNova)
   })
 }
+
+
+
 criarElemento(arrayNormais, "carnesNormais", document.querySelectorAll('.container')[0])
 criarElemento(arrayExoticas, "carnesExoticas",document.querySelectorAll('.container')[1])
+
+// criarElemento(profLauro, "carnesNormais", document.querySelectorAll('.container')[0])
+// criarElemento(profLauro, "carnesExoticas",document.querySelectorAll('.container')[1])

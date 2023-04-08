@@ -1,3 +1,4 @@
+
 html {
     margin: 0px;
     padding: 0px;
@@ -7,15 +8,16 @@ html {
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #1f1f21;
+    background-color: #1f1f21 !important;
     text-decoration: none;
-
-
 }
 
 body {
 
     margin: 0;
+}
+.divLogoFooter{
+    margin-right: 30px;
 }
 
 
@@ -116,25 +118,25 @@ section {
     color: #fff;
 }
 
-#divLogo {
-
+.divLogo {
+    cursor: pointer;
     align-items: center;
     display: flex;
     margin-left: 40px;
     
 }
 
-#divLogo:hover {
+.divLogo:hover {
     scale: 1.1;
     transition: 700ms;
 }
 
-#divLogo img {
+.divLogo img {
     height: 40px;
     margin-right: 10px;
 }
 
-#dropdown {
+#dropDown {
     display: flex;
     margin-right: 40px;
 }
@@ -151,6 +153,10 @@ section {
 .navLista>a {
     color: #fff;
     text-decoration: none;
+}
+#hamburguerMenu{
+    display: none;
+    padding-right: 40px;
 }
 
 /* --------------------primeira sec--------------------------------- */
@@ -401,10 +407,6 @@ footer {
     display: flex;
 }
 
-.icones {
-
-}
-
 .fi {
     cursor: pointer;
     scale: 190%;
@@ -448,19 +450,7 @@ a {
 
 /* footer */
 
-/* @media only screen and (min-width: 1400px) {
 
-
-    .imagemMeio1{
-
-        background-position-y: -600px;
-    
-    }
-    .centralizar > p{
-        font-size: 15px;
-        padding: 10px 500px;
-    }
-} */
 
 /* -----------------------------formulario------------------------------------ */
 .formulario {
@@ -654,11 +644,7 @@ bottom: -60px;
     line-height: 200px; 
     color: aqua;
 }
-.mostrar {
-    display: block;
-    transition: opacity 2s ease-in-out;
-    opacity: 1;  
-}
+
       
 .qRimg{
     bottom: -3184px;
@@ -669,3 +655,55 @@ bottom: -60px;
 .aparecer{
     display: block;
 }
+
+/*----------------------------------------- mediaquery */
+@media screen and (max-width: 1160px) {
+
+    .divLogoHeader{
+        display: none ;
+    }
+    #paiNavLista{
+        justify-content: center;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1136px){
+    .qRcode1, .qRcode2, .qRcode3{
+        display: none;
+    }
+}
+@media screen and (max-width: 950px){
+    .divLogoFooter, .linha{
+        display: none;
+    }  
+}
+
+@media screen and (max-width: 930px) {
+    
+    #hamburguerMenu{
+        display: block;
+    }
+    #dropDown{
+        display: none;
+    }
+    .divLogoHeader{
+        display: flex;
+    }
+    #paiNavLista{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 570px){
+    .tresTextos{
+        display: none;
+    }
+    footer{
+        justify-content: center;
+    }
+       
+}
+
+
