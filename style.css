@@ -1,4 +1,3 @@
-
 html {
     margin: 0px;
     padding: 0px;
@@ -16,7 +15,8 @@ body {
 
     margin: 0;
 }
-.divLogoFooter{
+
+.divLogoFooter {
     margin-right: 30px;
 }
 
@@ -28,10 +28,11 @@ section {
     box-sizing: border-box;
     margin-bottom: 200px;
 }
+
 .caixaDoTitulo {
-    -webkit-box-shadow: 40px 32px 61px 12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 40px 32px 61px 12px rgba(0,0,0,0.75);
-    box-shadow: 40px 32px 61px 12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 40px 32px 61px 12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 40px 32px 61px 12px rgba(0, 0, 0, 0.75);
+    box-shadow: 40px 32px 61px 12px rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,9 +50,10 @@ section {
     height: 379px;
     width: 273px;
     margin-right: 20px;
-  
+
 }
-.tituloCard{
+
+.tituloCard {
     background-color: none;
     margin: 0;
     text-align: center;
@@ -78,10 +80,12 @@ section {
     height: 35%;
     border-radius: 0px 0px 10px 10px;
 }
-.containerCardInf{
+
+.containerCardInf {
     /* display: flex; */
 }
-.informacoes{
+
+.informacoes {
     text-align: center;
     margin: 0;
 }
@@ -113,7 +117,8 @@ section {
     width: 100%;
     height: 60px;
 }
-#paiNavLista > a{
+
+#paiNavLista>a {
     text-decoration: none;
     color: #fff;
 }
@@ -123,7 +128,7 @@ section {
     align-items: center;
     display: flex;
     margin-left: 40px;
-    
+
 }
 
 .divLogo:hover {
@@ -154,7 +159,8 @@ section {
     color: #fff;
     text-decoration: none;
 }
-#hamburguerMenu{
+
+#hamburguerMenu {
     display: none;
     padding-right: 40px;
 }
@@ -231,11 +237,11 @@ section {
 }
 
 .tituloDoCarroussel {
-    -webkit-box-shadow: 40px 32px 61px 12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 40px 32px 61px 12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 40px 32px 61px 12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 40px 32px 61px 12px rgba(0, 0, 0, 0.75);
     box-shadow: 40px 32px 61px 12px rgba(0, 0, 0, 0.466);
     display: flex;
-    justify-content: start      ;
+    justify-content: start;
     align-items: center;
     width: 273px;
     height: 50px;
@@ -244,7 +250,7 @@ section {
     margin: 25px 0;
     padding-left: 10px;
     box-sizing: border-box;
-    
+
 }
 
 
@@ -264,9 +270,9 @@ section {
     overflow: hidden;
 }
 
-.control > svg {
+.control>svg {
     color: red;
-    
+
 }
 
 
@@ -322,12 +328,13 @@ section {
     box-shadow: 5px 15px 61px 46px rgba(0, 0, 0, 0.6);
     display: flex;
 }
-.flex{
+
+.flex {
     margin: 0px -30px;
     border-radius: 5px;
     display: flex;
     align-items: center;
-    
+
 }
 
 
@@ -422,13 +429,16 @@ footer {
     justify-content: space-between;
 
 }
-.iconeDentro > a > svg {
+
+.iconeDentro>a>svg {
     padding: 0 3px;
     scale: 1.5;
-} 
-.iconeDentro > a > svg:hover {
+}
+
+.iconeDentro>a>svg:hover {
     scale: 2.5;
-} 
+}
+
 /* verificar onde o "a" afeta */
 a {
     cursor: pointer;
@@ -455,14 +465,31 @@ a {
 /* -----------------------------formulario------------------------------------ */
 .formulario {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;    
 
 }
-.divFormularioInterna{
-    box-sizing: border-box;
+.metade{
+    border: 1px solid greenyellow;
+    height: 820px;
+    width: 500px;
+}
+.imgForm{
+    height: 100%;
+    transform: rotate(90deg)
+    
+}
+.imgForm{
+    background-image: url("img/shutterstock_467639330_5e25a2a3dcedc.jpg");
+    background-repeat: no-repeat, no-repeat;
+    object-fit:cover;
+    height: 790px;
+    width: 470px;
+    transform: rotate(90deg)
+}
+
+.divFormularioInterna {
     padding: 30px;
-    background-color: #c80f0fd0;
+    /* background-color: #c80f0fd0; */ 
     height: 820px;
     width: 500px;
     margin: 100px;
@@ -474,11 +501,12 @@ a {
     background-color: #fff;
     margin-bottom: 20px;
 }
+
 label {
     display: block;
     text-align: start;
     margin-bottom: 5px;
-  }
+}
 
 
 
@@ -489,10 +517,11 @@ label {
 
 
 /* -----------------------select-------------------------- */
-#vazia{
+#vazia {
     padding: 5px;
     position: relative;
 }
+
 td {
     width: 200px;
     height: 20px;
@@ -527,12 +556,14 @@ table {
     transform: rotate(90deg);
     transition: 500ms;
 }
-.select{
+
+.select {
     justify-content: center;
     display: flex;
 
 }
-.classeTeste{
+
+.classeTeste {
     position: absolute;
     background-color: red;
 }
@@ -547,9 +578,22 @@ table {
 }
 
 
-.containerTextButton{
-position: relative;
-bottom: -60px;
+.containerTextButton {
+    position: relative;
+    bottom: -60px;
+}
+
+button {
+    background-color: #da4d4dc4;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    padding: 7px 17px;
+    font-size: 16px;
+}
+button:hover{
+    background-color: #f39393c4;
+    color: #464646;
 }
 
 /* ------------------------------textArea and button -----------------------*/
@@ -565,15 +609,19 @@ bottom: -60px;
     text-align: left;
 }
 
-#caixa1 > spam{
-    display: flex;
-}
 #caixa1 {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.radioFlex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.containerBola{
+
+.containerBola {
     display: flex;
     align-items: center;
 }
@@ -589,36 +637,45 @@ bottom: -60px;
 .bolaMarcada {
     background-color: #0075FF;
 }
-.radio{
+
+.radio {
     margin-bottom: 20px;
+}
+
+.padrao {
+    display: block;
 }
 
 /* // -------------------------------radio button */
 /* -----------------------------------checkBox */
-.checkList{
+.checkList {
     padding-left: 0;
     display: flex;
     justify-content: space-between;
 }
 
-.containerDaListaCheckBox li{
+.containerDaListaCheckBox li {
     display: flex;
     align-items: center;
 }
-.containerDaListaCheckBox li div{
+
+.containerDaListaCheckBox li div {
     width: 10px;
     height: 10px;
     border: 1px solid #fff;
     margin-right: 5px;
 }
-.marcado{
+
+.marcado {
     background-color: #0075FF;
 }
-.marcarDesmarcarTodos{
+
+.marcarDesmarcarTodos {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 /* -----------------------------------checkBox */
 
 
@@ -631,38 +688,41 @@ bottom: -60px;
     background-color: #0075FF;
 
 }
+
 #minha-div {
     display: none;
     opacity: 0;
     transition: opacity 2s ease-in-out;
     width: 200px;
-    height: 200px; 
+    height: 200px;
     position: absolute;
-    top: 50%; 
-    border: 2px solid greenyellow; 
-    text-align: center; 
-    line-height: 200px; 
+    top: 50%;
+    border: 2px solid greenyellow;
+    text-align: center;
+    line-height: 200px;
     color: aqua;
 }
 
-      
-.qRimg{
+
+.qRimg {
     bottom: -3184px;
     right: 278px;
     width: 180px;
     display: none;
 }
-.aparecer{
+
+.aparecer {
     display: block;
 }
 
 /*----------------------------------------- mediaquery */
 @media screen and (max-width: 1160px) {
 
-    .divLogoHeader{
-        display: none ;
+    .divLogoHeader {
+        display: none;
     }
-    #paiNavLista{
+
+    #paiNavLista {
         justify-content: center;
     }
 
@@ -670,40 +730,49 @@ bottom: -60px;
 }
 
 
-@media screen and (max-width: 1136px){
-    .qRcode1, .qRcode2, .qRcode3{
+@media screen and (max-width: 1136px) {
+
+    .qRcode1,
+    .qRcode2,
+    .qRcode3 {
         display: none;
     }
 }
-@media screen and (max-width: 950px){
-    .divLogoFooter, .linha{
+
+@media screen and (max-width: 950px) {
+
+    .divLogoFooter,
+    .linha {
         display: none;
-    }  
+    }
 }
 
 @media screen and (max-width: 930px) {
-    
-    #hamburguerMenu{
+
+    #hamburguerMenu {
         display: block;
     }
-    #dropDown{
+
+    #dropDown {
         display: none;
     }
-    .divLogoHeader{
+
+    .divLogoHeader {
         display: flex;
     }
-    #paiNavLista{
+
+    #paiNavLista {
         justify-content: space-between;
     }
 }
-@media screen and (max-width: 570px){
-    .tresTextos{
+
+@media screen and (max-width: 570px) {
+    .tresTextos {
         display: none;
     }
-    footer{
+
+    footer {
         justify-content: center;
     }
-       
+
 }
-
-
