@@ -1,3 +1,4 @@
+//------------------------------------------qrCode
 function aparecerQr(param){
     document.querySelector(param).classList.add("aparecer")
 }

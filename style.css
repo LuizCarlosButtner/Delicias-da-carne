@@ -12,18 +12,12 @@ html {
 }
 
 body {
-
     margin: 0;
 }
 
-.divLogoFooter {
-    margin-right: 30px;
-}
 
-
-
+/*------------------------------------------general */
 section {
-    /* border: 1px solid red; */
     padding: 0px 80px;
     box-sizing: border-box;
     margin-bottom: 200px;
@@ -42,15 +36,43 @@ section {
     border-radius: 5px;
 }
 
-/* -------------------------------------------------celula */
 
+
+
+
+/*------------------------------------------popUpAlert */
+#pop-up {
+    z-index: 2;
+    color: #000;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+    transition: all 0.3s ease-in-out;
+}
+#pop-up.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+#pop-up.hide {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+/* -------------------------------------------------celula */
 .celula {
     color: #1f1f21;
     border-radius: 5px;
     height: 379px;
     width: 273px;
     margin-right: 20px;
-
 }
 
 .tituloCard {
@@ -58,7 +80,6 @@ section {
     margin: 0;
     text-align: center;
     margin-bottom: 5px;
-
 }
 
 .cel1 {
@@ -81,16 +102,10 @@ section {
     border-radius: 0px 0px 10px 10px;
 }
 
-.containerCardInf {
-    /* display: flex; */
-}
-
 .informacoes {
     text-align: center;
     margin: 0;
 }
-
-
 
 .celula:hover {
     scale: 1.1;
@@ -99,10 +114,7 @@ section {
 
 
 
-/* -------------------------------------------------celula */
-
-
-/* ----------------------------------------------------- */
+/* -----------------------------------------------------nav */
 #logo {
     width: 100px;
     margin-left: 20px;
@@ -165,7 +177,7 @@ section {
     padding-right: 40px;
 }
 
-/* --------------------primeira sec--------------------------------- */
+/* -----------------------------------------------------firtSec */
 #sec1 {
     margin-top: 0;
     padding-left: 0;
@@ -194,11 +206,9 @@ section {
 
 }
 
-/* -----------------sec2------------------- */
-
+/* ------------------------------------------------------secondSec */
 #sec4 {
-    /* border: 1px solid red; */
-    /* align-items: center; */
+
     box-sizing: border-box;
 
 
@@ -212,16 +222,13 @@ section {
 }
 
 #flex>div {
-    /* border: 1px solid red; */
     width: 900px;
 
 }
 
 #flex>div>div {
     margin-left: 21%;
-    /* border: 1px solid red; */
     width: 500px;
-
 }
 
 #flex>p {
@@ -379,7 +386,7 @@ body>section:nth-child(7)>div>div>div.contatoLateral>div>div>img {
 
 
 
-/* footer */
+/* -------------------------------------------footer */
 
 footer {
     justify-content: space-between;
@@ -388,6 +395,10 @@ footer {
     height: 200px;
     background-color: #343437;
     padding: 0px 40px;
+}
+
+.divLogoFooter {
+    margin-right: 30px;
 }
 
 .juntaDiv {
@@ -439,13 +450,11 @@ footer {
     scale: 2.5;
 }
 
-/* verificar onde o "a" afeta */
 a {
     cursor: pointer;
     color: #fff;
     text-decoration: none;
 }
-
 
 #absolute {
     margin-top: 20px;
@@ -458,41 +467,44 @@ a {
     border-radius: 8px;
 }
 
-/* footer */
-
-
 
 /* -----------------------------formulario------------------------------------ */
 .formulario {
     display: flex;
-    justify-content: center;    
-
+    justify-content: center;
+    
 }
-.metade{
-    border: 1px solid greenyellow;
+
+.metade {
+    margin: 100px 0px;
     height: 820px;
     width: 500px;
 }
-.imgForm{
+
+.imgForm {
     height: 100%;
     transform: rotate(90deg)
-    
 }
-.imgForm{
+
+.imgForm {
     background-image: url("img/shutterstock_467639330_5e25a2a3dcedc.jpg");
     background-repeat: no-repeat, no-repeat;
-    object-fit:cover;
+    object-fit: cover;
     height: 790px;
     width: 470px;
     transform: rotate(90deg)
 }
 
 .divFormularioInterna {
-    padding: 30px;
-    /* background-color: #c80f0fd0; */ 
-    height: 820px;
-    width: 500px;
-    margin: 100px;
+    margin: 30px;
+}
+.metadeDireita{
+    background-color: #c80f0f;
+}
+.metadeEsquerda{
+    background-image: url(img/shutterstock_467639330_5e25a2a3dcedc.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .inputs {
@@ -575,6 +587,7 @@ table {
     height: 167px;
     width: 391px;
     margin-bottom: 20px;
+    resize: none;
 }
 
 
@@ -591,7 +604,8 @@ button {
     padding: 7px 17px;
     font-size: 16px;
 }
-button:hover{
+
+button:hover {
     background-color: #f39393c4;
     color: #464646;
 }

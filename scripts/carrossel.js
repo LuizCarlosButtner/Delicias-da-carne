@@ -1,6 +1,7 @@
 const container = document.querySelectorAll('.container')
 let currentIndex = 0;
 
+// ----------------------------------leftButton
 function botaoEsq(param) {
   let tamanho = 13;
   if (param == 1) {
@@ -13,6 +14,7 @@ function botaoEsq(param) {
 
 }
 
+// ----------------------------------rightButton
 function botaoDir(param) {
   if (currentIndex > 0) {
     currentIndex--;
@@ -21,8 +23,8 @@ function botaoDir(param) {
 }
 
 
-// -------------------------------------------------------------------------
 
+// ----------------------------------teacher`sArray
 const profLauro= [
   {
     nome: 'Prof. Lauro',
@@ -508,8 +510,8 @@ const profLauro= [
   },
 
 ]
-// -------------------------------------------------------------------------
 
+// ----------------------------------mainMeat
 const arrayNormais = [
   {
     nome: 'Alcatra',
@@ -902,8 +904,8 @@ const arrayNormais = [
     imagem: "img/fotos_churrascaria/normais/anchoEchorizo.jpg" 
   }
 ]
-// -------------------------------------------------------------------------
 
+// ----------------------------------exoticMeat
 const arrayExoticas = [
   {
     nome: 'Carne de avestruz',
@@ -1583,6 +1585,7 @@ const arrayExoticas = [
   },
 ]
 
+// ----------------------------------cardCriation
 let criarElemento = (p1,p2,p3) => {
   p1.forEach((celula) => {
 
@@ -1610,9 +1613,10 @@ let criarElemento = (p1,p2,p3) => {
 }
 
 
-
+// ----------------------------------cardCreation`sCall
 criarElemento(arrayNormais, "carnesNormais", document.querySelectorAll('.container')[0])
 criarElemento(arrayExoticas, "carnesExoticas",document.querySelectorAll('.container')[1])
 
+// ----------------------------------thatCallsAlittleJokeWithMyTeacher
 // criarElemento(profLauro, "carnesNormais", document.querySelectorAll('.container')[0])
 // criarElemento(profLauro, "carnesExoticas",document.querySelectorAll('.container')[1])

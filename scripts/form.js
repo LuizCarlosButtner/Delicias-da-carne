@@ -1,3 +1,4 @@
+//------------------------------------------beautifullMess
 let inputNome = document.getElementById("inputNome")
 let inputSobreNome = document.getElementById("inputSobreNome")
 let inputEmail = document.getElementById("inputEmail")
@@ -7,6 +8,9 @@ let select = document.querySelector(".select")
 let checkBox = document.querySelector(".checkBox")
 let textarea = document.querySelector("textarea")
 let botao = document.getElementById("btn")
+let popUp = document.getElementById("modificacao");
+let popUpDefora = document.getElementById("pop-up");
+
 
 
 botao.onclick = () => {
@@ -14,59 +18,59 @@ botao.onclick = () => {
   const ponto = inputEmail.value.indexOf(".")
   const caracter = /[\W_]/
 
-  // verificacao de nome.
+  //------------------------------------------NameVerif
   if (inputNome.value.length < 1) {
-    alert("campo nome não pode estar vazio!")
+    exibirPopUp("campo nome não pode estar vazio!")
   } else if (inputNome.value.includes('  ')) {
-    alert("Permitido somente um espaço no campo nome")
+    exibirPopUp("Permitido somente um espaço no campo nome")
   } else if (!inputNome.value.includes(' ')) {
-    alert("coloque no mínimo 2 nomes separados por espaço")
+    exibirPopUp("coloque no mínimo 2 nomes separados por espaço")
   } else if (inputNome.value.indexOf(' ') == inputNome.value.length - 1) {
-    alert("coloque no mínimo 2 nomes separados por espaço")
+    exibirPopUp("coloque no mínimo 2 nomes separados por espaço")
   }
-  // verificacao de email.
+  //------------------------------------------emailVerif
   else if (inputEmail.value == '') {
-    alert("preencha o email!")
+    exibirPopUp("preencha o email!")
   } else if (inputEmail.value.includes(' ')) {
     inputEmail.value = inputEmail.value.replace(/ /g, '');
   } else if (arroba == -1) {
-    alert("nome precisa ter @")
+    exibirPopUp("nome precisa ter @")
   } else if (ponto == -1) {
-    alert("falta o .")
+    exibirPopUp("falta o .")
   } else if (arroba > ponto) {
-    alert("o ponto nao pode estar antes do arroba!")
+    exibirPopUp("o ponto nao pode estar antes do arroba!")
   } else if (ponto == arroba + 1) {
-    alert("coloque um caracter entre o arroba e o ponto")
+    exibirPopUp("coloque um caracter entre o arroba e o ponto")
   } else if (arroba > ponto) {
-    alert("o ponto tem que ser depois do arroba")
+    exibirPopUp("o ponto tem que ser depois do arroba")
   } else if (inputEmail.value.search(caracter) > arroba && inputEmail.value.search(caracter) < ponto) {
-    alert("caracter dentro")
+    exibirPopUp("caracter dentro")
   }
-  //verificacao de telefone.
+  //------------------------------------------telVerif
   else if (inputTelefone.value.length < 1 || inputTelefone.value.length > 11) {
-    alert("O telefone deve ter 11 numeros")
+    exibirPopUp("O telefone deve ter 11 numeros")
   } else if (inputTelefone.value.search(caracter) >= 0) {
-    alert("tem um caractere dentro do numero")
+    exibirPopUp("tem um caractere dentro do numero")
   }
-  // verificaçao de select
+  //------------------------------------------selectVerif
   else if (document.getElementById('vazia').innerText == 'Selecionar') {
-    alert("selecione ao menos um tipo de carne")
-  } else if (!document.querySelectorAll(".verificar")[0].classList.contains("marcado") && !document.querySelectorAll(".verificar")[1].classList.contains("marcado") && !document.querySelectorAll(".verificar")[2].classList.contains("marcado")
-
-  ) {
-    alert("escolha o modo de envio!")
+    exibirPopUp("selecione ao menos um tipo de carne")
+  } else if (!document.querySelectorAll(".verificar")[0].classList.contains("marcado") && !document.querySelectorAll(".verificar")[1].classList.contains("marcado") && !document.querySelectorAll(".verificar")[2].classList.contains("marcado")) {
+    exibirPopUp("escolha o modo de envio!")
+  } else if (textarea.value.length < 5) {
+    exibirPopUp("Minimo 5 caracteres no texto")
   }
+  //------------------------------------------formDone
+  else {
+    exibirPopUp(`Formulario de ${inputNome.value} enviado!`, setTimeout(function () {
+      recarregarPagina()
+    }, 4000
+    ))
 
-  // verificaçao de mesnsagem 
-
-  else if (textarea.value.length < 5) {
-    alert("Minimo 5 caracteres no texto")
   }
-
-
 }
 
-// =------------------------------ substituirCaracteres
+//------------------------------------------replaceCarac
 function substituirCaracteres(input) {
 
   input.value = input.value.replace(/\(/g, '');
@@ -74,12 +78,9 @@ function substituirCaracteres(input) {
   input.value = input.value.replace(/\-/g, '');
   input.value = input.value.replace(/ /g, '');
 }
-// =------------------------------ substituirCaracteres
 
 
-
-// =------------------------------select button
-
+//------------------------------------------select button
 let a = document.querySelector("table")
 let seta = document.querySelector("#seta")
 let vazia = document.querySelector("#vazia")
@@ -87,11 +88,12 @@ let primeira = document.querySelector("#primeira")
 let b = document.getElementsByTagName("td")
 let svg = '<svg id="seta" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16"> <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>'
 
-// =------------------------------select button
+//------------------------------------------hideArrow
 vazia.onclick = () => {
   hide()
 }
 
+//------------------------------------------changeValueOnClick
 function esse(a) {
   let teste = a.innerText
   vazia.innerText = teste
@@ -103,29 +105,25 @@ function esse(a) {
   })
   a.style.display = "none"
 }
-
+//------------------------------------------hideTheList
 const hide = () => {
   for (let i = 1; i < b.length; i++) {
     b[i].classList.toggle("hide")
   }
   document.querySelector("#seta").classList.toggle("viraVira")
 }
-// =------------------------------select button
 
 
 
-// -------------------------------radio button
+// //------------------------------------------radio button
 let radioClicado = (inde) => {
   document.querySelectorAll(".bola").forEach((elem) => {
     elem.classList.remove("bolaMarcada")
   })
   inde.classList.add("bolaMarcada")
 }
-// -------------------------------radio button
 
-
-
-// -----------------------------------checkBox
+// //------------------------------------------checkBox
 let calculador = 0;
 
 let todosOsMeios = (elem) => {
@@ -146,14 +144,13 @@ let todosOsMeios = (elem) => {
 }
 
 
-
 let checkClique = (elem) => {
   if (elem.classList.contains("marcado")) {
     elem.classList.remove("marcado");
     calculador--
   } else {
-    elem.classList.add("marcado")
-    calculador++
+    elem.classList.add("marcado");
+    calculador++;
   }
 
   if (calculador == 0) {
@@ -170,15 +167,28 @@ let checkClique = (elem) => {
       document.querySelectorAll(".checkList div li div")[i].classList.add("marcado")
     }
   }
-  var minhaDiv = document.getElementById("minha-div");
-  minhaDiv.classList.add("mostrar");
+}
+
+//------------------------------------------AlertPopUp
+function exibirPopUp(recado) {
+  popUp.innerText = recado
+
+  popUpDefora.classList.add("show");
 
   setTimeout(function () {
-    minhaDiv.classList.remove("mostrar");
-  }, 2000);
-
-
-
+    popUpDefora.classList.remove("show");
+    popUpDefora.classList.add("hide");
+    setTimeout(function () {
+      popUpDefora.classList.remove("hide");
+    }, 800);
+  }, 4000);
 }
+
+//------------------------------------------RestartPage
+function recarregarPagina() {
+  location.reload();
+}
+
+
 
 
